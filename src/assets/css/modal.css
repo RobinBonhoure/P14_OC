@@ -1,0 +1,42 @@
+.modal_container {
+    position: fixed;
+    background-color: rgba(0,0,0,0.75);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    padding: 10px 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal p {
+    text-align: left;
+    font-weight: bold;
+}
+
+.close_container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    top: 5px;
+}
+
+.close_container p {
+    margin: 0;
+    color: black;
+    cursor: pointer;
+}
