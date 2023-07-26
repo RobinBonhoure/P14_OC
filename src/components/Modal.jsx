@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../assets/css/modal.css';
 
 const Modal = ({closeModal}) => {

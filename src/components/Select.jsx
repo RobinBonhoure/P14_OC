@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function Select ({data, value}) {
     return(
         <select className="input_employee" onChange={value}>
