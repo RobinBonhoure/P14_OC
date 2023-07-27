@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-function Select ({data, value}) {
+function Select ({data, value, name}) {
     return(
         <select className="input_employee" onChange={value}>
-            <option value=""></option>
-            {data.map((dataMapped, index) => {
+            <option>{name}</option>
+            {data.map((dataMap, index) => {
                 return(
-                    <option value={dataMapped.name} key={index}>{dataMapped.name}</option>
+                    <option value={dataMap.name} key={index}>{dataMap.name}</option>
                 )
             })}
         </select>

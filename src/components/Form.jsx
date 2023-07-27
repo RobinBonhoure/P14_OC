@@ -52,9 +52,9 @@ const Form = () => {
                 <DatePicker className="input_employee" placeholderText="Start date" selected={date} onChange={(date) => setStart(date)} />
                 <input className="input_employee" placeholder="Street" id="street" type="text" onChange={(e) => setStreet(e.target.value)}/>
                 <input className="input_employee" placeholder="City" id="city" type="text" onChange={(e) => setCity(e.target.value)} />
-                    <Select name="state" id="state" data={states} value={stateValue} />
+                    <Select name="State" id="state" data={states} value={stateValue} />
                     <input className="input_employee" placeholder="Zip code" id="zip-code" type="number" onChange={(e) => setCode(e.target.value)} />
-                <Select name="departement" id="departement" data={departements} value={departementValue} />
+                <Select name="Departement" id="departement" data={departements} value={departementValue} />
             </form>
             <button onClick={handleClick}>Save</button> 
             {openModal && <Modal closeModal={setOpenModal} />}
