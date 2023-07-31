@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css"
 import DatePicker from "react-datepicker";
 import { states } from "../assets/data/states";
-import { departements } from "../assets/data/departments"; 
-import Select from "./Select";
+import { departements } from "../assets/data/departments";
+import Select from "react-select-robin-easy";
 import { useDispatch } from "react-redux";
 import { addEmployee } from "../reducers/createEmployee";
 

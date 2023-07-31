@@ -29,5 +29,26 @@ label {
     margin-top: 10px;
 }
 
-form>div, form>div input, form>input {width: 200px;}
-form>select {width: 208px;}
+input,
+select {
+    border: none;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    border: 1px solid black;
+}
+
+form>div,
+form>div input,
+form>input {
+    width: 200px;
+}
+
+form>select {
+    width: 220px;
+}
+
+.table_container {
+    margin-top: 5vh;
+}
