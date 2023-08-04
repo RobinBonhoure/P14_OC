@@ -7,7 +7,7 @@ import isPropValid from '@emotion/is-prop-valid';
 const shouldForwardProp = prop => isPropValid(prop);
 
 const Table = () => {
-    const test = useSelector((state => state.employee))
+    const selector = useSelector((state => state.employee))
 
     const columns = [{
         name: 'First Name',
@@ -57,9 +57,9 @@ const Table = () => {
     }
     ]
 
-    const [search, setSearch] = useState(test.employee)
+    const [search, setSearch] = useState(selector.employee)
     const handleFilter = (e) => {
-        const dataFiltered = test.employee.filter(data => {
+        const dataFiltered = selector.employee.filter(data => {
             return (
                 data.firstname.toLowerCase().includes(e.target.value.toLowerCase()) ||
                 data.lastname.toLowerCase().includes(e.target.value.toLowerCase()) ||

@@ -12,7 +12,6 @@ const Modal = ({closeModal}) => {
             </div>
         </div>
     )
-
 }
 
 export default Modal
